@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Send mail</h1>
+<form method="POST">
+    {% csrf_token %}
+<input type="text" name="subject" placeholder="subject"><br>
+<input type="text" name="to" placeholder="To address"><br>
+<input type="text" name="message" placeholder="Message">
+<input type="submit" value="Send  mail">
+    </form>
+</body>
+</html>

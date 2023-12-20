@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+</head>
+<body>
+<audio controls>
+    <source src="/static/audio/3286.mp3" type="audio/mp3">
+</audio>
+{% for det in det %}
+{{det.bname}}
+<button type="submit" ><a href="/show/{{det.id}}">View</a> </button>
+{% endfor %}
+<a href="{% url 'logout' %}"><button>Logout</button></a>
+</body>
+</html>
